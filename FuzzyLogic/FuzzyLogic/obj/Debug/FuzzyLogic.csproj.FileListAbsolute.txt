@@ -1,0 +1,15 @@
+D:\VisualStProject\FuzzyLogic\FuzzyLogic\bin\Debug\FuzzyLogic.exe.config
+D:\VisualStProject\FuzzyLogic\FuzzyLogic\bin\Debug\FuzzyLogic.exe
+D:\VisualStProject\FuzzyLogic\FuzzyLogic\bin\Debug\FuzzyLogic.pdb
+D:\VisualStProject\FuzzyLogic\FuzzyLogic\obj\Debug\MainWindow.g.cs
+D:\VisualStProject\FuzzyLogic\FuzzyLogic\obj\Debug\App.g.cs
+D:\VisualStProject\FuzzyLogic\FuzzyLogic\obj\Debug\FuzzyLogic_MarkupCompile.cache
+D:\VisualStProject\FuzzyLogic\FuzzyLogic\obj\Debug\FuzzyLogic_MarkupCompile.lref
+D:\VisualStProject\FuzzyLogic\FuzzyLogic\obj\Debug\MainWindow.baml
+D:\VisualStProject\FuzzyLogic\FuzzyLogic\obj\Debug\FuzzyLogic.g.resources
+D:\VisualStProject\FuzzyLogic\FuzzyLogic\obj\Debug\FuzzyLogic.Properties.Resources.resources
+D:\VisualStProject\FuzzyLogic\FuzzyLogic\obj\Debug\FuzzyLogic.csproj.GenerateResource.cache
+D:\VisualStProject\FuzzyLogic\FuzzyLogic\obj\Debug\FuzzyLogic.csproj.CoreCompileInputs.cache
+D:\VisualStProject\FuzzyLogic\FuzzyLogic\obj\Debug\FuzzyLogic.exe
+D:\VisualStProject\FuzzyLogic\FuzzyLogic\obj\Debug\FuzzyLogic.pdb
+D:\VisualStProject\FuzzyLogic\FuzzyLogic\obj\Debug\FuzzyLogic.csproj.AssemblyReference.cache

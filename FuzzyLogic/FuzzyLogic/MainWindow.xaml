@@ -1,0 +1,73 @@
+﻿<Window x:Class="FuzzyLogic.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FuzzyLogic"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="AliceBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btn_make" Margin="20, 10"
+                FontSize="18" Content="Calculate"
+                Click="btn_make_Click"/>
+
+        <Border MinWidth="525" MinHeight="325" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5">
+
+            <Rectangle Height="1" Fill="Blue" RenderTransformOrigin="0.5,0.5" >
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="180"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+
+            <Border.Background>
+                <ImageBrush ImageSource="BackViewPlane.png"/>
+            </Border.Background>
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform x:Name="rotate" />
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+        </Border>
+
+        <Border Grid.Row="1" Grid.ColumnSpan="2" >
+            <Grid>
+                <TextBlock Height="30" Width="100" FontSize="18"
+                           VerticalAlignment="Top" HorizontalAlignment="Center"
+                           Text="{Binding Path=CurrentAngle, RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=Window}}"/>
+                <Rectangle Width="1" HorizontalAlignment="Center" Fill="Red" />
+                <Rectangle Height="1" VerticalAlignment="Center" Fill="Red" RenderTransformOrigin="0.5,0.5">
+                    <Rectangle.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="180"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Rectangle.RenderTransform>
+                </Rectangle>
+            </Grid>
+        </Border>
+
+        <StackPanel  Grid.Column="1">
+            <Label Content="Angle offset" Margin="10, 0"/>
+            <TextBox x:Name="textBox_angle" Margin="10, 0" Height="35" FontSize="16"/>
+        </StackPanel>
+    </Grid>
+</Window>
